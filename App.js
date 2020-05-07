@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from './components/Home';
 import TodoList from './components/TodoList';
 import User from './components/User';
+import TodoTask from './components/TodoTask';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="TodoList" component={TodoList} />
         <Stack.Screen name="User" component={User} />
+        <Stack.Screen name="TaskDetail" component={TodoTask} />
       </Stack.Navigator>
     </NavigationContainer>
   );
