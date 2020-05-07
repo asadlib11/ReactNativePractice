@@ -12,6 +12,10 @@ const Home=(props) =>{
         title="Go to TodoList"
         onPress={() => props.navigation.navigate('TodoList')}
       />
+      <Button
+        title="Go to Your Profile"
+        onPress={() => props.navigation.navigate('User', {name: "Asad"})}
+      />
     </View>
   );
 }
