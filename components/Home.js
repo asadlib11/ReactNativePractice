@@ -16,6 +16,14 @@ const Home=(props) =>{
         title="Go to Your Profile"
         onPress={() => props.navigation.navigate('User', {name: "Asad"})}
       />
+      <Button
+        title="Go to Your Posts"
+        onPress={() => props.navigation.navigate('Posts')}
+      />
+      <Button
+        title="Go to Your ContactList"
+        onPress={() => props.navigation.navigate('Contacts')}
+      />
     </View>
   );
 }

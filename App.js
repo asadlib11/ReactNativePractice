@@ -7,6 +7,9 @@ import Home from './components/Home';
 import TodoList from './components/TodoList';
 import User from './components/User';
 import TodoTask from './components/TodoTask';
+import Posts from './components/Posts';
+import PostDetail from './components/PostDetail';
+import ContactsPage from './components/Contacts';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -20,6 +23,9 @@ export default function App() {
         <Stack.Screen name="TodoList" component={TodoList} />
         <Stack.Screen name="User" component={User} />
         <Stack.Screen name="TaskDetail" component={TodoTask} />
+        <Stack.Screen name="Posts" component={Posts} />
+        <Stack.Screen name="PostDetail" component={PostDetail} />
+        <Stack.Screen name="Contacts" component={ContactsPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
